@@ -1,0 +1,33 @@
+<div>
+    <div style="display:flex; justify-content: center;">
+        <h1>
+            Registros
+    <table class="table table-dark">
+        <thead>
+            <tr>
+                <th scope="col">
+                    Ocorrência
+                <th scope="col">
+                    Endereço
+                <th scope="col">
+                    Status
+        
+        <tbody>
+            $forall Entity cid register <- registers
+                <tr>
+                    <td>
+                        #{registerOcorrencia register}
+                    <td>
+                        #{registerEndereco register}
+                    <td>
+                        #{registerStatus register}
+                    <td>
+                        <a>
+                            Editar
+                    <td>
+                        <form method=post action=@{ApagarRegR cid}>
+                            <input type="submit" value="X">
+
+    <div style="display:flex; justify-content: center;">
+        <a href=@{RegisterR}>
+            Adicionar registro

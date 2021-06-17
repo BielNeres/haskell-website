@@ -1,0 +1,22 @@
+Cliente
+    nome Text
+    cpf Text
+    idade Int
+    deriving Show
+
+Register
+    ocorrencia Text
+    endereco Text
+    status Text 
+    deriving Show
+
+Ocorr
+    cliid ClienteId
+    regisid RegisterId
+    descricao Text
+
+Usuario 
+    email Text  
+    senha Text
+    UniqueEmail email 
+    deriving Show 
